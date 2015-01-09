@@ -68,8 +68,9 @@ adder(5, 1, 2);
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+var argument = "called when a funciton is invoked";
 
+var parameter = "is what the function will recieve";
 
 //Next problem
 
@@ -78,9 +79,20 @@ adder(5, 1, 2);
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+undefined 
+null 
+NaN 
+0 
+"" (empty string) 
+false
 
-
+var checkFalsy = function(num) {
+  if (num) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 //Next Problem
 
@@ -88,14 +100,18 @@ adder(5, 1, 2);
 
 //Create a function called myName that returns your name
 
-  //Code Here
+var myName = function(name) {
+  return name;
+}
 
+myName("mike slayer");
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+var newMyName = myName;
 
 //Now alert the result of invoking newMyName
 
+alert(newMyName("mike"));
 
 
 //Next problem
@@ -104,10 +120,15 @@ adder(5, 1, 2);
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+var outerFn = function() {
+  return function() {
+    return "MIKE SLAYER";
+  }
+}
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+var innerFn = outerFn();
 
 //Now invoke innerFn.
+innerFn();
