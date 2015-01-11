@@ -13,7 +13,7 @@ var isTyler = function(name) {
   }
 }
 
-isTyler('Tyler');
+isTyler(name);
 //Next problem
 
 
@@ -21,7 +21,7 @@ isTyler('Tyler');
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
-var getName = function(name) {
+var getName = function() {
   return prompt("what is yo name??");
 }
 
